@@ -40,10 +40,10 @@ function Circle(x,y,dx,dy,radius){
 
 
 var circleArray=[];
-for (var i=0;i<100;i++){
-	var x=Math.random()*canvas.width;
+for (var i=0;i<200;i++){
+	var x=Math.random()*(canvas.width-radius*2)+radius;
 	console.log(x);
-	var y=Math.random()*canvas.height;	
+	var y=Math.random()*(canvas.height-radius*2)+radius;	
 	var dy=(Math.random()-0.5)*5;
 	var dx=(Math.random()-0.5)*5;
 	var radius=30;
